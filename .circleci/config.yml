@@ -1,0 +1,24 @@
+version: 2.1
+
+orbs:
+  test-orb: joseph-sentry/test-orb@dev:first
+
+jobs:
+  test-api:
+    docker:
+      - image: cimg/python:3.10.2
+    steps:
+      - checkout
+      - run:
+          name: Install requirements
+          command: pip install -r api/requirements.txt
+      - run:
+          name: Run tests and collect coverage
+          command: pytest --cov api/
+      - test-orb/upload
+
+workflows:
+  version: 2.1
+  build-test:
+    jobs:
+      - test-api
