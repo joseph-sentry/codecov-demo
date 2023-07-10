@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  test-orb: joseph-sentry/test-orb@dev:first
+  testorb: joseph-sentry/test-orb@dev:first
 
 jobs:
   test-api:
@@ -15,7 +15,7 @@ jobs:
       - run:
           name: Run tests and collect coverage
           command: pytest --cov api/
-      - test-orb/upload
+      - testorb/upload
 
 workflows:
   version: 2.1
