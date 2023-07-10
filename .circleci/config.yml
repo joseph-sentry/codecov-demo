@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  testorb: joseph-sentry/test-orb@dev:first
+  testorb: joseph-sentry/test-orb@dev:third
 
 jobs:
   test-api:
