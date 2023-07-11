@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Run tests and collect coverage
           command: pytest --cov api/
-      - testorb/upload
+      - testorb/upload:
           flags: CODECOV_FLAG
 
 workflows:
