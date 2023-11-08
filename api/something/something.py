@@ -5,3 +5,6 @@ class Something:
 
     def do_something_else(self, x, y):
         return x * 2 - y
+
+    def another_do_something(self):
+        print("hello world")
