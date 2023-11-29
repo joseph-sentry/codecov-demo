@@ -24,7 +24,5 @@ coverage:
         calc:
           flags: 
             - calc
-# parsers:
-#   # cobertura:
-#   #   handle_missing_conditions: true
-#   #   partials_as_hits: true
+github_checks:
+  annotations: false
