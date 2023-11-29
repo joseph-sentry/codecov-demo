@@ -25,4 +25,4 @@ coverage:
           flags: 
             - calc
 github_checks:
-  annotations: false
+  annotations: true
